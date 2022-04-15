@@ -14,7 +14,7 @@ class Easing_main {
                         defaultValue: 'easeInOutBack'
                         },
                         max: {
-                            type: Scratch.ArgumentType.NUMBER,
+                            type: Scratch.ArgumentType.STRING,
                             defaultValue: '1'
                         },
                     }
@@ -23,9 +23,10 @@ class Easing_main {
         };
     }
     ease(args) {
-        if(type == "easeInOutBack"){
+        if(args.type == "easeInOutBack"){
             const c1 = 1.70158;
             const c2 = c1 * 1.525;
+            const x = args.x
 
             return x < 0.5
                 ? (pow(2 * x, 2) * ((c2 + 1) * 2 * x - c2)) / 2
