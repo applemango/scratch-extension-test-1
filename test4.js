@@ -3,6 +3,8 @@ class Easing_main {
         return {
             id: 'Easing',
             name: 'Easing',
+            color1: '#FF8C1A',
+            color2: '#DB6E00',
             blocks: [
                 {
                     opcode: 'ease',
